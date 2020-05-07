@@ -2237,6 +2237,11 @@ expect@^25.1.0:
     jest-message-util "^25.1.0"
     jest-regex-util "^25.1.0"
 
+express-locale@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/express-locale/-/express-locale-2.0.0.tgz#a0fc0815cd436a028da39a8a26468e127f4128a4"
+  integrity sha512-SUwsgOTV8lplAkgyfKSwKH3ZVSKUrAa+b48acPGXpwWX211WZ/BYWX2WcZO57+xLOqPYb6rSNpWCFnhGrt0moA==
+
 express-mongo-sanitize@^1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/express-mongo-sanitize/-/express-mongo-sanitize-1.3.2.tgz#fba404f6c041577cbeeec4dd9057cefbb439de5a"
@@ -4337,6 +4342,11 @@ mongodb@3.5.4:
     safe-buffer "^5.1.2"
   optionalDependencies:
     saslprep "^1.0.0"
+
+mongoose-intl@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/mongoose-intl/-/mongoose-intl-3.1.1.tgz#a03d16d2e02f466a1aa77aaf463dd2133569a802"
+  integrity sha512-VoBPp7Kc5/UiiZ+r3s27AJXlfZd2fzJ4PiX3H/++OkdKXYlDmaoP9JIP2fRfiWqP9iNoSCFOAsr7ezwEHESdVQ==
 
 mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
