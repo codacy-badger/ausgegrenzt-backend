@@ -7,7 +7,7 @@ const createTag = {
     parent_id: Joi.string()
       .custom(objectId)
       .allow(null),
-    type: Joi.string(),
+    type: Joi.string().required(),
     longitude: Joi.number(),
     latitude: Joi.number(),
     parent: Joi.any().strip(),

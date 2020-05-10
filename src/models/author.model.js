@@ -9,7 +9,7 @@ const authorSchema = mongoose.Schema(
     },
   },
   {
-    timestamps: true,
+    timestamps: false,
   }
 );
 

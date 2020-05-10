@@ -11,6 +11,12 @@ const createAuthor = async authorBody => {
 
 const getAuthors = async query => {
   const filter = pick(query, ['name']);
+  if (filter.name) {
+    filter.name = {
+      $regex: filter.name,
+      $options: 'i',
+    };
+  }
   const options = getQueryOptions(query);
   const authors = await Author.find(filter, null, options);
   const total = await Author.count();
