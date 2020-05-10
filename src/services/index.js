@@ -5,3 +5,4 @@ module.exports.userService = require('./user.service');
 module.exports.authorService = require('./author.service');
 module.exports.tagService = require('./tag.service');
 module.exports.snippetService = require('./snippet.service');
+module.exports.textService = require('./text.service');
