@@ -9,8 +9,9 @@ const createText = async (textBody, snippetId, language) => {
   if (!snippet) {
     throw new AppError(httpStatus.NOT_FOUND, 'Snippet not found');
   }
-  snippet.text = await Text.create(textBody);
-  snippet.save();
+  const text = await new Text();
+  Object.assign(text, textBody);
+  snippet.text = text;
   return snippet.text;
 };
 

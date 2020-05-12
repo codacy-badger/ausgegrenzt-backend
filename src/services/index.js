@@ -6,3 +6,4 @@ module.exports.authorService = require('./author.service');
 module.exports.tagService = require('./tag.service');
 module.exports.snippetService = require('./snippet.service');
 module.exports.textService = require('./text.service');
+module.exports.mediaService = require('./media.service');

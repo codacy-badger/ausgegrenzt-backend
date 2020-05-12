@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const mongooseIntl = require('mongoose-intl');
 const { languages, defaultLanguage } = require('../utils/i18n.util');
 const textSchema = require('./text.schema');
+const mediaSchema = require('./media.schema');
 
 const snippetSchema = mongoose.Schema(
   {
@@ -40,6 +41,11 @@ const snippetSchema = mongoose.Schema(
     text: {
       type: textSchema,
     },
+    media: [
+      {
+        type: mediaSchema,
+      },
+    ],
   },
   {
     id: false,

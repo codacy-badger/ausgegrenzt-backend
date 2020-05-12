@@ -25,10 +25,11 @@ if (config.env !== 'test') {
 app.use(
   createLocaleMiddleware({
     priority: ['accept-language', 'default'],
-    default: 'en-GB',
+    default: 'de-DE',
   })
 );
 
+app.use('/statics', express.static('statics'));
 // set security HTTP headers
 app.use(helmet());
 
