@@ -13,3 +13,7 @@ yarn-error.log
 
 # Code coverage
 coverage
+
+# editors
+.vscode
+.idea
